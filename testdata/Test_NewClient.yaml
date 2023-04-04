@@ -1,0 +1,203 @@
+---
+version: 2
+interactions:
+    - id: 0
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 113
+        transfer_encoding: []
+        trailer: {}
+        host: share2.dexcom.com
+        remote_addr: ""
+        request_uri: ""
+        body: '{"accountName":"REDACTED","applicationId":"d89443d2-327c-4a6f-89e5-496bbb0317db","password":"REDACTED"}'
+        form: {}
+        headers:
+            Content-Type:
+                - application/json
+        url: https://share2.dexcom.com/ShareWebServices/Services/General/AuthenticatePublisherAccount
+        method: POST
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: 38
+        uncompressed: false
+        body: '"accountID"'
+        headers:
+            Cf-Cache-Status:
+                - DYNAMIC
+            Cf-Ray:
+                - 7b27aaf1a85708ef-SEA
+            Content-Length:
+                - "38"
+            Content-Type:
+                - application/json
+            Date:
+                - Tue, 04 Apr 2023 06:59:17 GMT
+            Server:
+                - cloudflare
+            Strict-Transport-Security:
+                - max-age=0
+            Vary:
+                - Origin
+                - Access-Control-Request-Method
+                - Access-Control-Request-Headers
+            X-Trace-Id:
+                - 9a8aace8-b6ee-4e81-aa57-5e3a38ab70fd
+        status: 200 OK
+        code: 200
+        duration: 395.766166ms
+    - id: 1
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 130
+        transfer_encoding: []
+        trailer: {}
+        host: share2.dexcom.com
+        remote_addr: ""
+        request_uri: ""
+        body: '{"accountId":"REDACTED","applicationId":"d89443d2-327c-4a6f-89e5-496bbb0317db","password":"REDACTED"}'
+        form: {}
+        headers:
+            Content-Type:
+                - application/json
+        url: https://share2.dexcom.com/ShareWebServices/Services/General/LoginPublisherAccountById
+        method: POST
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: 38
+        uncompressed: false
+        body: '"3c348745-d2b3-4e3e-a8fe-306c0c18eae6"'
+        headers:
+            Cf-Cache-Status:
+                - DYNAMIC
+            Cf-Ray:
+                - 7b27aaf65afc08ef-SEA
+            Content-Length:
+                - "38"
+            Content-Type:
+                - application/json
+            Date:
+                - Tue, 04 Apr 2023 06:59:18 GMT
+            Server:
+                - cloudflare
+            Strict-Transport-Security:
+                - max-age=0
+            Vary:
+                - Origin
+                - Access-Control-Request-Method
+                - Access-Control-Request-Headers
+            X-Trace-Id:
+                - 009893b6-c321-4595-b317-13df8e6633d2
+        status: 200 OK
+        code: 200
+        duration: 364.957958ms
+    - id: 2
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 80
+        transfer_encoding: []
+        trailer: {}
+        host: share2.dexcom.com
+        remote_addr: ""
+        request_uri: ""
+        body: '{"maxCount":1,"minutes":1440,"sessionId":"REDACTED"}'
+        form: {}
+        headers:
+            Content-Type:
+                - application/json
+        url: https://share2.dexcom.com/ShareWebServices/Services/Publisher/ReadPublisherLatestGlucoseValues
+        method: POST
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: '[{"WT":"Date(1680591428000)","ST":"Date(1680591428000)","DT":"Date(1680591428000-0700)","Value":160,"Trend":"FortyFiveUp"}]'
+        headers:
+            Cf-Cache-Status:
+                - DYNAMIC
+            Cf-Ray:
+                - 7b27aafaed7208ef-SEA
+            Content-Type:
+                - application/json
+            Date:
+                - Tue, 04 Apr 2023 06:59:18 GMT
+            Server:
+                - cloudflare
+            Strict-Transport-Security:
+                - max-age=0
+            Vary:
+                - Origin
+                - Access-Control-Request-Method
+                - Access-Control-Request-Headers
+            X-Trace-Id:
+                - a6050045-a810-4c74-8542-56018488f488
+        status: 200 OK
+        code: 200
+        duration: 106.706292ms
+    - id: 3
+      request:
+        proto: HTTP/1.1
+        proto_major: 1
+        proto_minor: 1
+        content_length: 82
+        transfer_encoding: []
+        trailer: {}
+        host: share2.dexcom.com
+        remote_addr: ""
+        request_uri: ""
+        body: '{"maxCount":100,"minutes":1440,"sessionId":"REDACTED"}'
+        form: {}
+        headers:
+            Content-Type:
+                - application/json
+        url: https://share2.dexcom.com/ShareWebServices/Services/Publisher/ReadPublisherLatestGlucoseValues
+        method: POST
+      response:
+        proto: HTTP/2.0
+        proto_major: 2
+        proto_minor: 0
+        transfer_encoding: []
+        trailer: {}
+        content_length: -1
+        uncompressed: true
+        body: '[{"WT":"Date(1680591428000)","ST":"Date(1680591428000)","DT":"Date(1680591428000-0700)","Value":160,"Trend":"FortyFiveUp"},{"WT":"Date(1680591128000)","ST":"Date(1680591128000)","DT":"Date(1680591128000-0700)","Value":144,"Trend":"FortyFiveUp"},{"WT":"Date(1680590828000)","ST":"Date(1680590828000)","DT":"Date(1680590828000-0700)","Value":140,"Trend":"FortyFiveUp"},{"WT":"Date(1680590528000)","ST":"Date(1680590528000)","DT":"Date(1680590528000-0700)","Value":131,"Trend":"Flat"},{"WT":"Date(1680590228000)","ST":"Date(1680590228000)","DT":"Date(1680590228000-0700)","Value":117,"Trend":"Flat"},{"WT":"Date(1680589928000)","ST":"Date(1680589928000)","DT":"Date(1680589928000-0700)","Value":107,"Trend":"FortyFiveDown"},{"WT":"Date(1680589628000)","ST":"Date(1680589628000)","DT":"Date(1680589628000-0700)","Value":113,"Trend":"FortyFiveDown"},{"WT":"Date(1680589328000)","ST":"Date(1680589328000)","DT":"Date(1680589328000-0700)","Value":127,"Trend":"FortyFiveDown"},{"WT":"Date(1680589028000)","ST":"Date(1680589028000)","DT":"Date(1680589028000-0700)","Value":142,"Trend":"Flat"},{"WT":"Date(1680588728000)","ST":"Date(1680588728000)","DT":"Date(1680588728000-0700)","Value":156,"Trend":"Flat"},{"WT":"Date(1680588428000)","ST":"Date(1680588428000)","DT":"Date(1680588428000-0700)","Value":159,"Trend":"FortyFiveUp"},{"WT":"Date(1680588128000)","ST":"Date(1680588128000)","DT":"Date(1680588128000-0700)","Value":156,"Trend":"FortyFiveUp"},{"WT":"Date(1680587828000)","ST":"Date(1680587828000)","DT":"Date(1680587828000-0700)","Value":145,"Trend":"Flat"},{"WT":"Date(1680587528000)","ST":"Date(1680587528000)","DT":"Date(1680587528000-0700)","Value":131,"Trend":"Flat"},{"WT":"Date(1680587228000)","ST":"Date(1680587228000)","DT":"Date(1680587228000-0700)","Value":125,"Trend":"Flat"},{"WT":"Date(1680586928000)","ST":"Date(1680586928000)","DT":"Date(1680586928000-0700)","Value":128,"Trend":"Flat"},{"WT":"Date(1680586628000)","ST":"Date(1680586628000)","DT":"Date(1680586628000-0700)","Value":132,"Trend":"Flat"},{"WT":"Date(1680586328000)","ST":"Date(1680586328000)","DT":"Date(1680586328000-0700)","Value":133,"Trend":"Flat"},{"WT":"Date(1680586028000)","ST":"Date(1680586028000)","DT":"Date(1680586028000-0700)","Value":124,"Trend":"Flat"},{"WT":"Date(1680585728000)","ST":"Date(1680585728000)","DT":"Date(1680585728000-0700)","Value":119,"Trend":"Flat"},{"WT":"Date(1680585428000)","ST":"Date(1680585428000)","DT":"Date(1680585428000-0700)","Value":120,"Trend":"Flat"},{"WT":"Date(1680585128000)","ST":"Date(1680585128000)","DT":"Date(1680585128000-0700)","Value":109,"Trend":"Flat"},{"WT":"Date(1680584828000)","ST":"Date(1680584828000)","DT":"Date(1680584828000-0700)","Value":110,"Trend":"FortyFiveDown"},{"WT":"Date(1680584528000)","ST":"Date(1680584528000)","DT":"Date(1680584528000-0700)","Value":115,"Trend":"FortyFiveDown"},{"WT":"Date(1680584228000)","ST":"Date(1680584228000)","DT":"Date(1680584228000-0700)","Value":121,"Trend":"Flat"},{"WT":"Date(1680576428000)","ST":"Date(1680576428000)","DT":"Date(1680576428000-0700)","Value":107,"Trend":"Flat"},{"WT":"Date(1680576128000)","ST":"Date(1680576128000)","DT":"Date(1680576128000-0700)","Value":115,"Trend":"Flat"},{"WT":"Date(1680575828000)","ST":"Date(1680575828000)","DT":"Date(1680575828000-0700)","Value":123,"Trend":"Flat"},{"WT":"Date(1680575527000)","ST":"Date(1680575527000)","DT":"Date(1680575527000-0700)","Value":126,"Trend":"Flat"},{"WT":"Date(1680575228000)","ST":"Date(1680575228000)","DT":"Date(1680575228000-0700)","Value":130,"Trend":"FortyFiveUp"},{"WT":"Date(1680574928000)","ST":"Date(1680574928000)","DT":"Date(1680574928000-0700)","Value":128,"Trend":"FortyFiveUp"},{"WT":"Date(1680574628000)","ST":"Date(1680574628000)","DT":"Date(1680574628000-0700)","Value":119,"Trend":"FortyFiveUp"},{"WT":"Date(1680574327000)","ST":"Date(1680574327000)","DT":"Date(1680574327000-0700)","Value":109,"Trend":"FortyFiveUp"},{"WT":"Date(1680574028000)","ST":"Date(1680574028000)","DT":"Date(1680574028000-0700)","Value":95,"Trend":"Flat"},{"WT":"Date(1680573728000)","ST":"Date(1680573728000)","DT":"Date(1680573728000-0700)","Value":86,"Trend":"Flat"},{"WT":"Date(1680573428000)","ST":"Date(1680573428000)","DT":"Date(1680573428000-0700)","Value":84,"Trend":"Flat"},{"WT":"Date(1680573128000)","ST":"Date(1680573128000)","DT":"Date(1680573128000-0700)","Value":83,"Trend":"Flat"},{"WT":"Date(1680572828000)","ST":"Date(1680572828000)","DT":"Date(1680572828000-0700)","Value":83,"Trend":"Flat"},{"WT":"Date(1680572528000)","ST":"Date(1680572528000)","DT":"Date(1680572528000-0700)","Value":84,"Trend":"Flat"},{"WT":"Date(1680572228000)","ST":"Date(1680572228000)","DT":"Date(1680572228000-0700)","Value":84,"Trend":"Flat"},{"WT":"Date(1680571928000)","ST":"Date(1680571928000)","DT":"Date(1680571928000-0700)","Value":85,"Trend":"Flat"},{"WT":"Date(1680571627000)","ST":"Date(1680571627000)","DT":"Date(1680571627000-0700)","Value":87,"Trend":"Flat"},{"WT":"Date(1680571327000)","ST":"Date(1680571327000)","DT":"Date(1680571327000-0700)","Value":87,"Trend":"Flat"},{"WT":"Date(1680571028000)","ST":"Date(1680571028000)","DT":"Date(1680571028000-0700)","Value":88,"Trend":"Flat"},{"WT":"Date(1680570728000)","ST":"Date(1680570728000)","DT":"Date(1680570728000-0700)","Value":87,"Trend":"Flat"},{"WT":"Date(1680570428000)","ST":"Date(1680570428000)","DT":"Date(1680570428000-0700)","Value":88,"Trend":"Flat"},{"WT":"Date(1680570127000)","ST":"Date(1680570127000)","DT":"Date(1680570127000-0700)","Value":86,"Trend":"Flat"},{"WT":"Date(1680569828000)","ST":"Date(1680569828000)","DT":"Date(1680569828000-0700)","Value":87,"Trend":"Flat"},{"WT":"Date(1680569528000)","ST":"Date(1680569528000)","DT":"Date(1680569528000-0700)","Value":89,"Trend":"Flat"},{"WT":"Date(1680569228000)","ST":"Date(1680569228000)","DT":"Date(1680569228000-0700)","Value":91,"Trend":"Flat"},{"WT":"Date(1680568928000)","ST":"Date(1680568928000)","DT":"Date(1680568928000-0700)","Value":94,"Trend":"Flat"},{"WT":"Date(1680568628000)","ST":"Date(1680568628000)","DT":"Date(1680568628000-0700)","Value":97,"Trend":"Flat"},{"WT":"Date(1680568327000)","ST":"Date(1680568327000)","DT":"Date(1680568327000-0700)","Value":99,"Trend":"Flat"},{"WT":"Date(1680568028000)","ST":"Date(1680568028000)","DT":"Date(1680568028000-0700)","Value":99,"Trend":"Flat"},{"WT":"Date(1680567728000)","ST":"Date(1680567728000)","DT":"Date(1680567728000-0700)","Value":100,"Trend":"Flat"},{"WT":"Date(1680567428000)","ST":"Date(1680567428000)","DT":"Date(1680567428000-0700)","Value":96,"Trend":"Flat"},{"WT":"Date(1680567128000)","ST":"Date(1680567128000)","DT":"Date(1680567128000-0700)","Value":94,"Trend":"Flat"},{"WT":"Date(1680566828000)","ST":"Date(1680566828000)","DT":"Date(1680566828000-0700)","Value":96,"Trend":"Flat"},{"WT":"Date(1680566528000)","ST":"Date(1680566528000)","DT":"Date(1680566528000-0700)","Value":100,"Trend":"Flat"},{"WT":"Date(1680566227000)","ST":"Date(1680566227000)","DT":"Date(1680566227000-0700)","Value":101,"Trend":"Flat"},{"WT":"Date(1680565928000)","ST":"Date(1680565928000)","DT":"Date(1680565928000-0700)","Value":99,"Trend":"Flat"},{"WT":"Date(1680565628000)","ST":"Date(1680565628000)","DT":"Date(1680565628000-0700)","Value":92,"Trend":"Flat"},{"WT":"Date(1680565328000)","ST":"Date(1680565328000)","DT":"Date(1680565328000-0700)","Value":85,"Trend":"Flat"},{"WT":"Date(1680565028000)","ST":"Date(1680565028000)","DT":"Date(1680565028000-0700)","Value":82,"Trend":"Flat"},{"WT":"Date(1680564728000)","ST":"Date(1680564728000)","DT":"Date(1680564728000-0700)","Value":83,"Trend":"Flat"},{"WT":"Date(1680564427000)","ST":"Date(1680564427000)","DT":"Date(1680564427000-0700)","Value":88,"Trend":"Flat"},{"WT":"Date(1680564127000)","ST":"Date(1680564127000)","DT":"Date(1680564127000-0700)","Value":90,"Trend":"Flat"},{"WT":"Date(1680563827000)","ST":"Date(1680563827000)","DT":"Date(1680563827000-0700)","Value":87,"Trend":"FortyFiveDown"},{"WT":"Date(1680563527000)","ST":"Date(1680563527000)","DT":"Date(1680563527000-0700)","Value":93,"Trend":"FortyFiveDown"},{"WT":"Date(1680563227000)","ST":"Date(1680563227000)","DT":"Date(1680563227000-0700)","Value":103,"Trend":"Flat"},{"WT":"Date(1680562928000)","ST":"Date(1680562928000)","DT":"Date(1680562928000-0700)","Value":112,"Trend":"Flat"},{"WT":"Date(1680562627000)","ST":"Date(1680562627000)","DT":"Date(1680562627000-0700)","Value":115,"Trend":"Flat"},{"WT":"Date(1680562327000)","ST":"Date(1680562327000)","DT":"Date(1680562327000-0700)","Value":120,"Trend":"Flat"},{"WT":"Date(1680562027000)","ST":"Date(1680562027000)","DT":"Date(1680562027000-0700)","Value":116,"Trend":"Flat"},{"WT":"Date(1680561727000)","ST":"Date(1680561727000)","DT":"Date(1680561727000-0700)","Value":110,"Trend":"Flat"},{"WT":"Date(1680561428000)","ST":"Date(1680561428000)","DT":"Date(1680561428000-0700)","Value":110,"Trend":"Flat"},{"WT":"Date(1680561127000)","ST":"Date(1680561127000)","DT":"Date(1680561127000-0700)","Value":112,"Trend":"Flat"},{"WT":"Date(1680560827000)","ST":"Date(1680560827000)","DT":"Date(1680560827000-0700)","Value":113,"Trend":"Flat"},{"WT":"Date(1680560528000)","ST":"Date(1680560528000)","DT":"Date(1680560528000-0700)","Value":114,"Trend":"Flat"},{"WT":"Date(1680560227000)","ST":"Date(1680560227000)","DT":"Date(1680560227000-0700)","Value":115,"Trend":"Flat"},{"WT":"Date(1680559927000)","ST":"Date(1680559927000)","DT":"Date(1680559927000-0700)","Value":118,"Trend":"Flat"},{"WT":"Date(1680559628000)","ST":"Date(1680559628000)","DT":"Date(1680559628000-0700)","Value":120,"Trend":"Flat"},{"WT":"Date(1680559328000)","ST":"Date(1680559328000)","DT":"Date(1680559328000-0700)","Value":122,"Trend":"Flat"},{"WT":"Date(1680559027000)","ST":"Date(1680559027000)","DT":"Date(1680559027000-0700)","Value":127,"Trend":"Flat"},{"WT":"Date(1680558728000)","ST":"Date(1680558728000)","DT":"Date(1680558728000-0700)","Value":128,"Trend":"Flat"},{"WT":"Date(1680558428000)","ST":"Date(1680558428000)","DT":"Date(1680558428000-0700)","Value":131,"Trend":"Flat"},{"WT":"Date(1680558127000)","ST":"Date(1680558127000)","DT":"Date(1680558127000-0700)","Value":131,"Trend":"Flat"},{"WT":"Date(1680557827000)","ST":"Date(1680557827000)","DT":"Date(1680557827000-0700)","Value":137,"Trend":"Flat"},{"WT":"Date(1680557528000)","ST":"Date(1680557528000)","DT":"Date(1680557528000-0700)","Value":138,"Trend":"Flat"},{"WT":"Date(1680557227000)","ST":"Date(1680557227000)","DT":"Date(1680557227000-0700)","Value":143,"Trend":"Flat"},{"WT":"Date(1680556928000)","ST":"Date(1680556928000)","DT":"Date(1680556928000-0700)","Value":145,"Trend":"Flat"},{"WT":"Date(1680556627000)","ST":"Date(1680556627000)","DT":"Date(1680556627000-0700)","Value":143,"Trend":"Flat"},{"WT":"Date(1680556327000)","ST":"Date(1680556327000)","DT":"Date(1680556327000-0700)","Value":143,"Trend":"Flat"},{"WT":"Date(1680556027000)","ST":"Date(1680556027000)","DT":"Date(1680556027000-0700)","Value":148,"Trend":"Flat"},{"WT":"Date(1680555727000)","ST":"Date(1680555727000)","DT":"Date(1680555727000-0700)","Value":151,"Trend":"FortyFiveUp"},{"WT":"Date(1680555428000)","ST":"Date(1680555428000)","DT":"Date(1680555428000-0700)","Value":149,"Trend":"FortyFiveUp"},{"WT":"Date(1680555127000)","ST":"Date(1680555127000)","DT":"Date(1680555127000-0700)","Value":141,"Trend":"FortyFiveUp"},{"WT":"Date(1680554828000)","ST":"Date(1680554828000)","DT":"Date(1680554828000-0700)","Value":126,"Trend":"FortyFiveUp"},{"WT":"Date(1680554527000)","ST":"Date(1680554527000)","DT":"Date(1680554527000-0700)","Value":125,"Trend":"FortyFiveUp"},{"WT":"Date(1680554227000)","ST":"Date(1680554227000)","DT":"Date(1680554227000-0700)","Value":107,"Trend":"Flat"}]'
+        headers:
+            Cf-Cache-Status:
+                - DYNAMIC
+            Cf-Ray:
+                - 7b27aafc3e3608ef-SEA
+            Content-Type:
+                - application/json
+            Date:
+                - Tue, 04 Apr 2023 06:59:19 GMT
+            Server:
+                - cloudflare
+            Strict-Transport-Security:
+                - max-age=0
+            Vary:
+                - Origin
+                - Access-Control-Request-Method
+                - Access-Control-Request-Headers
+            X-Trace-Id:
+                - 1c2101fd-d3ed-4cab-b76d-b4f0bf0a0e8e
+        status: 200 OK
+        code: 200
+        duration: 111.559916ms
