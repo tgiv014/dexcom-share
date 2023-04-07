@@ -153,6 +153,8 @@ type GlucoseEntry struct {
 	Value int    `json:"Value"`
 	Trend string `json:"Trend"`
 	DT    string `json:"DT"`
+	WT    string `json:"WT"`
+	ST    string `json:"ST"`
 }
 
 type readGlucoseRequest struct {
